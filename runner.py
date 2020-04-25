@@ -1,7 +1,7 @@
-#InputFile=input("Enter the file path")
-with open('test.csv', mode='r') as text:
+InputFile= input("Enter the file path:")
+with open(InputFile, mode='r') as text:
     InputString = text.read()
-    list1 = InputString.split()
+    list1 = InputString.split("\n")
     list2 = []
     for i in list1:
         list2.append(i.split(","))
